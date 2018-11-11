@@ -1,7 +1,7 @@
-package com.emiyas.tutorialmod.items.base;
+package com.emiyas.tutorialmod.items.custom;
 
 import com.emiyas.tutorialmod.Main;
-import com.emiyas.tutorialmod.init.ModItems;
+import com.emiyas.tutorialmod.init.ModItemsInit;
 import com.emiyas.tutorialmod.util.IHasModel;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,7 +15,7 @@ public class ItemCustom extends Item implements IHasModel
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.MATERIALS);
 
-		ModItems.ITEMS.add(this);
+		ModItemsInit.ITEMS.add(this);
 	}
 
 	@Override

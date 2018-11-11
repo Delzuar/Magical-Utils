@@ -1,12 +1,14 @@
 package com.emiyas.tutorialmod.items;
 
+import com.emiyas.tutorialmod.items.custom.SwordCustom;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
-public class RedIngotSword extends SwordBase
+public class ItemRedIngotSword extends SwordCustom
 {
 
-	public RedIngotSword(String name, ToolMaterial material) 
+	public ItemRedIngotSword(String name, ToolMaterial material) 
 	{
 		super(name, material);
 	}

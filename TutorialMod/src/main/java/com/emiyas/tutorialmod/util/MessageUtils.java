@@ -12,4 +12,11 @@ public class MessageUtils
 		testComponent.getStyle().setColor(TextFormatting.DARK_PURPLE);
 		player.sendStatusMessage(testComponent, false);
 	}
+
+	public static void errorMessage(String text, EntityPlayer player)
+	{
+		TextComponentTranslation testComponent = new TextComponentTranslation(text);
+		testComponent.getStyle().setColor(TextFormatting.RED);
+		player.sendStatusMessage(testComponent, false);
+	}
 }
