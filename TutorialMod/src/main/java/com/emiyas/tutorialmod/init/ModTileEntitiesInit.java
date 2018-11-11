@@ -5,7 +5,7 @@ import java.util.List;
 
 import net.minecraft.tileentity.TileEntity;
 
-public class ModTileEntities 
+public class ModTileEntitiesInit 
 {
 	public static final List<TileEntity> TILEENTITIES = new ArrayList<TileEntity>();
 }

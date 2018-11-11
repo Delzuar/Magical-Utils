@@ -3,17 +3,17 @@ package com.emiyas.tutorialmod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.emiyas.tutorialmod.items.RedIngotSword;
-import com.emiyas.tutorialmod.items.SwordBase;
-import com.emiyas.tutorialmod.items.WandOfBinding;
-import com.emiyas.tutorialmod.items.base.ItemCustom;
+import com.emiyas.tutorialmod.items.ItemRedIngotSword;
+import com.emiyas.tutorialmod.items.ItemWandOfBinding;
+import com.emiyas.tutorialmod.items.custom.ItemCustom;
+import com.emiyas.tutorialmod.items.custom.SwordCustom;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSword;
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ModItems 
+public class ModItemsInit 
 {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
@@ -29,9 +29,9 @@ public class ModItems
 	//Basic Items
 	public static final Item RED_INGOT = new ItemCustom("red_ingot");
 	public static final Item RED_COMPOUND = new ItemCustom("red_compound");
-	public static final Item WAND_OF_BINDING = new WandOfBinding("wand_of_binding");
+	public static final Item WAND_OF_BINDING = new ItemWandOfBinding("wand_of_binding");
 	
 	//Swords
-	public static final Item RED_INGOT_SWORD = new RedIngotSword("red_ingot_sword", MATERIAL_RED_INGOT);
+	public static final Item RED_INGOT_SWORD = new ItemRedIngotSword("red_ingot_sword", MATERIAL_RED_INGOT);
 	
 }
