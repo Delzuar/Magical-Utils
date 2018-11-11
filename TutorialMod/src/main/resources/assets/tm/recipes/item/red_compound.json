@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " R ",
+        "RIR",
+        " R "
+    ],
+    
+    "key":
+    {
+        "R":
+        {
+            "item": "minecraft:redstone"
+        },    
+                  
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "tm:red_compound",
+        "count": 1
+    }
+}

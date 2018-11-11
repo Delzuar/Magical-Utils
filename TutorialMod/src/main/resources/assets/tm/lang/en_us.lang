@@ -1,0 +1,12 @@
+//Items
+item.red_ingot.name=Red Ingot
+item.red_compound.name=Red Compound
+item.red_ingot_sword.name=Red sword
+item.wand_of_binding.name=Wand of Binding
+
+//Blocks
+tile.red_ingot_block.name=Red Ingot Block
+tile.teleporter_block.name=Teleporter
+
+//Others
+message.tm.counter_par=Counter: %d

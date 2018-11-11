@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "  P",
+        " O ",
+        "O  "
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:ender_pearl"
+        },    
+                  
+        "O":
+        {
+            "item": "minecraft:obsidian"
+        }
+    },
+    
+    "result":
+    {
+        "item": "tm:wand_of_binding",
+        "count": 1
+    }
+}

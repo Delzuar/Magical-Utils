@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " R ",
+        " R ",
+        " O "
+    ],
+    
+    "key":
+    {
+        "R":
+        {
+            "item": "tm:red_ingot"
+        },    
+                  
+        "O":
+        {
+            "item": "minecraft:obsidian"
+        }
+    },
+    
+    "result":
+    {
+        "item": "tm:red_ingot_sword",
+        "count": 1
+    }
+}
