@@ -1,9 +1,9 @@
 package com.emiyas.tutorialmod.util.handlers;
 
-import com.emiyas.tutorialmod.init.ModBlocks;
-import com.emiyas.tutorialmod.init.ModItems;
-import com.emiyas.tutorialmod.init.ModTileEntities;
-import com.emiyas.tutorialmod.tileEntities.TeleporterTileEntity;
+import com.emiyas.tutorialmod.init.ModBlocksInit;
+import com.emiyas.tutorialmod.init.ModItemsInit;
+import com.emiyas.tutorialmod.init.ModTileEntitiesInit;
+import com.emiyas.tutorialmod.tileEntities.TileEntityTeleporter;
 import com.emiyas.tutorialmod.util.IHasModel;
 import com.emiyas.tutorialmod.util.Reference;
 
@@ -24,19 +24,19 @@ public class RegistryHandler
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
 	{
-		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+		event.getRegistry().registerAll(ModItemsInit.ITEMS.toArray(new Item[0]));
 	}
 	
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event)
 	{
-		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+		event.getRegistry().registerAll(ModBlocksInit.BLOCKS.toArray(new Block[0]));
 	}
 
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event)
 	{
-		for(Item item : ModItems.ITEMS)
+		for(Item item : ModItemsInit.ITEMS)
 		{
 			if(item instanceof IHasModel)
 			{
@@ -44,7 +44,7 @@ public class RegistryHandler
 			}
 		}
 		
-		for(Block block : ModBlocks.BLOCKS)
+		for(Block block : ModBlocksInit.BLOCKS)
 		{
 			if(block instanceof IHasModel)
 			{

@@ -1,22 +1,22 @@
-package com.emiyas.tutorialmod.items;
+package com.emiyas.tutorialmod.items.custom;
 
 import com.emiyas.tutorialmod.Main;
-import com.emiyas.tutorialmod.init.ModItems;
+import com.emiyas.tutorialmod.init.ModItemsInit;
 import com.emiyas.tutorialmod.util.IHasModel;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemSword;
 
-public class SwordBase extends ItemSword implements IHasModel
+public class SwordCustom extends ItemSword implements IHasModel
 {
-	public SwordBase(String name, ToolMaterial material)
+	public SwordCustom(String name, ToolMaterial material)
 	{
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.COMBAT);
 
-		ModItems.ITEMS.add(this);
+		ModItemsInit.ITEMS.add(this);
 	}
 
 	@Override

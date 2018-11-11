@@ -1,8 +1,8 @@
-package com.emiyas.tutorialmod.blocks.base;
+package com.emiyas.tutorialmod.blocks.custom;
 
 import com.emiyas.tutorialmod.Main;
-import com.emiyas.tutorialmod.init.ModBlocks;
-import com.emiyas.tutorialmod.init.ModItems;
+import com.emiyas.tutorialmod.init.ModBlocksInit;
+import com.emiyas.tutorialmod.init.ModItemsInit;
 import com.emiyas.tutorialmod.util.IHasModel;
 
 import net.minecraft.block.Block;
@@ -11,17 +11,17 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockBase extends Block implements IHasModel
+public class BlockCustom extends Block implements IHasModel
 {
-	public BlockBase(String name, Material material)
+	public BlockCustom(String name, Material material)
 	{
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		
-		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		ModBlocksInit.BLOCKS.add(this);
+		ModItemsInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override

@@ -1,8 +1,8 @@
 package com.emiyas.tutorialmod;
 
-import com.emiyas.tutorialmod.init.ModRecipes;
+import com.emiyas.tutorialmod.init.ModRecipesInit;
 import com.emiyas.tutorialmod.proxy.CommonProxy;
-import com.emiyas.tutorialmod.tileEntities.TeleporterTileEntity;
+import com.emiyas.tutorialmod.tileEntities.TileEntityTeleporter;
 import com.emiyas.tutorialmod.util.Reference;
 
 import net.minecraftforge.fml.common.Mod;
@@ -27,13 +27,13 @@ public class Main
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
 		proxy.preInit(event);
-		GameRegistry.registerTileEntity(TeleporterTileEntity.class, Reference.MOD_ID + "TeleporterTileEntity");
+		GameRegistry.registerTileEntity(TileEntityTeleporter.class, Reference.MOD_ID + "TeleporterTileEntity");
 	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		ModRecipes.init();
+		ModRecipesInit.init();
 	}
 	
 	@EventHandler

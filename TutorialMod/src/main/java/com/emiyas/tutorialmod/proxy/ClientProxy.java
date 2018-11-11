@@ -1,7 +1,7 @@
 package com.emiyas.tutorialmod.proxy;
 
-import com.emiyas.tutorialmod.blocks.TeleporterBlock;
-import com.emiyas.tutorialmod.tileEntities.TeleporterTileEntity;
+import com.emiyas.tutorialmod.blocks.BlockTeleporter;
+import com.emiyas.tutorialmod.tileEntities.TileEntityTeleporter;
 import com.emiyas.tutorialmod.util.Reference;
 
 import net.minecraft.block.Block;
