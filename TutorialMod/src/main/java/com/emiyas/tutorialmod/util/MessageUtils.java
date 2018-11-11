@@ -8,8 +8,8 @@ public class MessageUtils
 {
 	public static void informationMessage(String text, EntityPlayer player)
 	{
-		TextComponentTranslation textTeleporter = new TextComponentTranslation(text);
-		textTeleporter.getStyle().setColor(TextFormatting.DARK_PURPLE);
-		player.sendStatusMessage(textTeleporter, false);
+		TextComponentTranslation testComponent = new TextComponentTranslation(text);
+		testComponent.getStyle().setColor(TextFormatting.DARK_PURPLE);
+		player.sendStatusMessage(testComponent, false);
 	}
 }
